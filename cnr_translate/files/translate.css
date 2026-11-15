@@ -1,0 +1,28 @@
+/* Translate add-on for Codychat 10.1 | Author: M Kashif | MIT License */
+/* Translate */
+.ctr-btn{display:inline-flex;align-items:center;justify-content:center;width:20px;height:18px;margin-right:4px;vertical-align:middle;cursor:pointer;color:rgba(127,127,127,.7);border-radius:6px;transition:color .2s,background .2s}
+.ctr-btn svg{width:15px;height:15px}
+.ctr-btn:hover{color:#14b8a6;background:rgba(20,184,166,.12)}
+.ctr-on .ctr-btn{color:#14b8a6}
+.ctr-wait .ctr-btn svg{animation:ctrSpin .9s linear infinite;color:#14b8a6}
+.ctr-txt{display:block;white-space:pre-wrap;word-break:break-word;animation:ctrIn .25s ease}
+.ctr-meta{display:block;margin-top:4px;font-size:11px;opacity:.65}
+.ctr-meta a.ctr-orig{cursor:pointer;text-decoration:underline;color:inherit}
+.ctr-flash{display:inline-block;margin:3px 2px 0;padding:2px 8px;border-radius:10px;font-size:11px;background:rgba(127,127,127,.15);opacity:.9;animation:ctrIn .2s ease}
+.ctr-panel{padding:18px}
+.ctr-head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.ctr-head b{font-size:16px}
+.ctr-head p{margin:2px 0 0;font-size:13px;opacity:.7}
+.ctr-badge{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#14b8a6,#0ea5e9);color:#fff;flex:0 0 42px}
+.ctr-badge svg{width:24px;height:24px}
+.ctr-label{font-size:13px;font-weight:600;margin:0 0 6px}
+.ctr-row{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;margin-top:12px;border-radius:14px;background:rgba(127,127,127,.12);font-weight:600}
+.ctr-note{font-size:12px;line-height:1.45;opacity:.7;margin:10px 2px 0}
+.ctr-switch{position:relative;display:inline-block;width:46px;height:26px}
+.ctr-switch input{opacity:0;width:0;height:0}
+.ctr-switch span{position:absolute;inset:0;border-radius:26px;background:rgba(127,127,127,.4);cursor:pointer;transition:background .2s}
+.ctr-switch span:before{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .2s}
+.ctr-switch input:checked + span{background:linear-gradient(135deg,#14b8a6,#0ea5e9)}
+.ctr-switch input:checked + span:before{transform:translateX(20px)}
+@keyframes ctrSpin{to{transform:rotate(360deg)}}
+@keyframes ctrIn{from{opacity:0;transform:translateY(-2px)}}
